@@ -10,7 +10,7 @@ import cloudinary
 import cloudinary.uploader
 from datetime import datetime
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="Templates", static_folder="Static", static_url_path="/static")
 app.secret_key = "campuscoin_tracker_2026"
 
 # --- CONFIGURATION ---
